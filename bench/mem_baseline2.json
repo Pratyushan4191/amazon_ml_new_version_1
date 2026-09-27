@@ -1,0 +1,44 @@
+[
+  {
+    "stage": "train",
+    "ok": false,
+    "sec": 2.0,
+    "peak_rss_mb": 189.0,
+    "stderr": [
+      "    handles = get_handle(",
+      "        path_or_handle, mode, is_text=False, storage_options=storage_options",
+      "    )",
+      "  File \"/home/rahul/anaconda3/lib/python3.13/site-packages/pandas/io/common.py\", line 882, in get_handle",
+      "    handle = open(handle, ioargs.mode)",
+      "FileNotFoundError: [Errno 2] No such file or directory: 'bench/memwork/feats.parquet'"
+    ]
+  },
+  {
+    "stage": "threshold",
+    "ok": false,
+    "sec": 0.7,
+    "peak_rss_mb": 189.0,
+    "stderr": [
+      "    handles = get_handle(",
+      "        path_or_handle, mode, is_text=False, storage_options=storage_options",
+      "    )",
+      "  File \"/home/rahul/anaconda3/lib/python3.13/site-packages/pandas/io/common.py\", line 882, in get_handle",
+      "    handle = open(handle, ioargs.mode)",
+      "FileNotFoundError: [Errno 2] No such file or directory: 'bench/memwork/val.parquet'"
+    ]
+  },
+  {
+    "stage": "predict",
+    "ok": false,
+    "sec": 2.0,
+    "peak_rss_mb": 192.0,
+    "stderr": [
+      "        ^",
+      "    )",
+      "    ^",
+      "  File \"/home/rahul/anaconda3/lib/python3.13/site-packages/lightgbm/basic.py\", line 297, in _safe_call",
+      "    raise LightGBMError(_LIB.LGBM_GetLastError().decode(\"utf-8\"))",
+      "lightgbm.basic.LightGBMError: Could not open bench/memwork/model.lgb"
+    ]
+  }
+]

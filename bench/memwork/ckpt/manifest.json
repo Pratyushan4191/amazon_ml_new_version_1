@@ -1,0 +1,23 @@
+{
+  "completed_chunks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "config": {
+    "chunk_size": 2000,
+    "max_bucket_size": 5000,
+    "max_candidates_per_entity": 200,
+    "enable_coarse_filter": true,
+    "min_coarse_similarity": 0.3,
+    "active_rules": null
+  },
+  "input_fingerprint": "n_s1=20000;s1_hash=4460760342254131394;n_index=618950;cols=4"
+}

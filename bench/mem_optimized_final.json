@@ -1,0 +1,58 @@
+[
+  {
+    "stage": "load",
+    "ok": true,
+    "sec": 2.8,
+    "peak_rss_mb": 204.0,
+    "output": "ROWS 20000 40000 40000"
+  },
+  {
+    "stage": "tfidf",
+    "ok": true,
+    "sec": 10.5,
+    "peak_rss_mb": 345.0,
+    "output": "OK"
+  },
+  {
+    "stage": "index",
+    "ok": true,
+    "sec": 17.3,
+    "peak_rss_mb": 388.0,
+    "output": "INDEX 618950 74518308"
+  },
+  {
+    "stage": "blocking",
+    "ok": true,
+    "sec": 209.8,
+    "peak_rss_mb": 430.0,
+    "output": "CANDS 3497191"
+  },
+  {
+    "stage": "features",
+    "ok": true,
+    "sec": 647.2,
+    "peak_rss_mb": 620.0,
+    "output": "FEATROWS 3497191"
+  },
+  {
+    "stage": "train",
+    "ok": true,
+    "sec": 231.5,
+    "peak_rss_mb": 1664.0,
+    "output": "TRAINROWS 3497191"
+  },
+  {
+    "stage": "threshold",
+    "ok": true,
+    "sec": 16.6,
+    "peak_rss_mb": 3311.0,
+    "output": "THR {'t_star': 0.99, 'max_f05': 0.9029991579291446, 'n_population': 10028, 'n_with_candidates': 9973, 'n_zero_candidates_included': 55}"
+  },
+  {
+    "stage": "predict",
+    "ok": true,
+    "sec": 59.4,
+    "peak_rss_mb": 1780.0,
+    "output": "PRED"
+  }
+]

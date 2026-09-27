@@ -1,0 +1,65 @@
+{
+  "dataset": {
+    "s1": 20000,
+    "s2": 40000,
+    "s3": 40000
+  },
+  "stages": [
+    {
+      "stage": "1_load_sources",
+      "sec": 0.32,
+      "rss_before_mb": 196.0,
+      "peak_rss_mb": 213.3,
+      "peak_delta_mb": 17.3
+    },
+    {
+      "stage": "2_fit_tfidf",
+      "sec": 4.38,
+      "rss_before_mb": 219.7,
+      "peak_rss_mb": 354.2,
+      "peak_delta_mb": 134.5
+    },
+    {
+      "stage": "3a_build_index",
+      "sec": 8.34,
+      "rss_before_mb": 269.4,
+      "peak_rss_mb": 401.7,
+      "peak_delta_mb": 132.3
+    },
+    {
+      "stage": "3b_blocking",
+      "sec": 367.6,
+      "rss_before_mb": 421.8,
+      "peak_rss_mb": 929.4,
+      "peak_delta_mb": 507.6
+    },
+    {
+      "stage": "4_features",
+      "sec": 631.76,
+      "rss_before_mb": 639.6,
+      "peak_rss_mb": 2086.7,
+      "peak_delta_mb": 1447.1
+    },
+    {
+      "stage": "5_train",
+      "sec": 109.89,
+      "rss_before_mb": 947.2,
+      "peak_rss_mb": 4364.4,
+      "peak_delta_mb": 3417.2
+    },
+    {
+      "stage": "6_threshold",
+      "sec": 12.3,
+      "rss_before_mb": 922.5,
+      "peak_rss_mb": 4364.4,
+      "peak_delta_mb": 3441.9
+    },
+    {
+      "stage": "7_inference",
+      "sec": 33.68,
+      "rss_before_mb": 1414.1,
+      "peak_rss_mb": 4364.4,
+      "peak_delta_mb": 2950.3
+    }
+  ]
+}
